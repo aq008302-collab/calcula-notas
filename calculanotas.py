@@ -1,14 +1,17 @@
+import notas_ponderadas
+
 print("calcula notas de um aluno")
 print()
 
 
 nota1 = float(input("informe a primera nota:"))
 nota2 = float(input("informe a segunda nota: "))
+nota3 = float(input("informe a terceira nota:"))
 
+resultado = notas_ponderadas.calcular(nota1, nota2, nota3)
 
-media = (nota1 + nota2) / 2
 
 
 print()
-print(f"a media da notas é: {media:.2f}")  
+print(f"o resultado é: {resultado:.2f}")  
 
